@@ -2,4 +2,5 @@ import docker
 
 client = docker.from_env()
 
-client.containers.run("hello-world")
+resp = client.containers.run("hello-world")
+print(resp)
